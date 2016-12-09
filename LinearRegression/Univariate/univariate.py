@@ -31,7 +31,7 @@ def gradient_descent(X, y, theta, alpha, num_iters):
     for i in range(num_iters):
 
         predictions = X.dot(theta).flatten()
-
+        
         errors_x1 = (predictions - y) * X[:, 0]
         errors_x2 = (predictions - y) * X[:, 1]
 
